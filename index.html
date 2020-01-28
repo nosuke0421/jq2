@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>jQuery中級編</title>
+  <link rel="stylesheet" href="ResetStylesheet.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="header-left">
+      <img class="icon" src="icon.png" alt="ロゴ">
+      <p>エンジニアくま</p>
+    </div>
+    <div class="header-right">
+      <p id="login-btn">ログイン</p>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <h1>モーダルを作る</h1>
+    <div class="message">
+      <p>モーダルとは、ボタンを押したら表示される小窓のようなもの。</p>
+      <p>ログイン情報の入力などに使われる。</p>
+      <p>jQueryで実装可能。</p>
+      <p>ヘッダーにあるログインボタンを押すとモーダルが表示される。</p>
+    </div>
+    <h1>アコーディオンを作る</h1>
+    <div class="message">
+      <p>アコーディオンとは、クリックによって詳細が表示されるようなもの。</p>
+      <p>FAQなどで使われる。</p>
+      <p>jQueryで実装可能。</p>
+      <p>アコーディオンは以下のような形式</p>
+    </div>
+
+    <div class="FAQ">
+      <h2>FAQ</h2>
+      <ul class="faq-list">
+        <li class="faq-list-item">
+          <h3>名前は？</h3>
+          <span>+</span>
+          <div class="answer">
+            <p>くまです</p>
+          </div>
+        </li>
+        <li class="faq-list-item">
+          <h3>何年生まれ？</h3>
+          <span>+</span>
+          <div class="answer">
+            <p>1996年生まれです</p>
+          </div>
+        </li>
+        <li class="faq-list-item">
+          <h3>出身は？</h3>
+          <span>+</span>
+          <div class="answer">
+            <p>岩手県です</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="login-modal">
+    <p>ID</p>
+    <input type="text" name="" value="">
+    <p>Mail-address</p>
+    <input type="text" name="" value="">
+    <div id="access-btn">
+      <p>ログインする</p>
+    </div>
+    <div id="exit-btn">
+      x
+    </div>
+  </div>
+
+  <footer>
+    <p>2020/02/28</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
